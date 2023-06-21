@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resultado de búsqueda</title>
+</head>
+<body>
+    {% if libro %}
+        <h2>Datos del libro:</h2>
+        <p>Código: {{ l.codigo }}</p>
+        <p>Título: {{ l.titulo }}</p>
+        <p>Autor: {{ l.autor }}</p>
+        <!-- Agrega otros campos según tus necesidades -->
+    {% else %}
+        <p>No se encontró ningún libro con ese código.</p>
+    {% endif %}
+</body>
+</html>
