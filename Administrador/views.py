@@ -73,13 +73,6 @@ def anadirLibro(request):
     return redirect ("libros/")
 
 
-def buscarLibro(request, codigo):
-    libro = Libro.objects.get(codigo=codigo)
-    context = {
-        'libro':libro
-    }
-    return render(request, "Busqueda.html", context)    
-
 def eliminarLibro(request ,id):
     libro = Libro.objects.get(id=id)
     context = {
@@ -125,7 +118,6 @@ def edicionLibro(request):
     libro.save()
     
     return redirect ("libros/")
-
 
 def eliminarPrestamo(request ,id):
     prestamo = PapeletaPrestamo.objects.get(id=id)

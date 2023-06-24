@@ -40,6 +40,7 @@ LOGIN_REDIRECT_URL = '/panel/'
 # Application definition
 
 INSTALLED_APPS = [
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
