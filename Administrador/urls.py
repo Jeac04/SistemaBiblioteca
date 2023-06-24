@@ -13,5 +13,5 @@ urlpatterns = [
     path('editarLibro/<int:id>', views.editarLibro, name="editarLibro"),     
     path('edicionLibro', views.edicionLibro, name="edicionLibro"),     
     path('eliminarPrestamo/<int:id>', views.eliminarPrestamo, name="eliminarPrestamo"),
-    path('buscarLibro/', views.buscarLibro, name="buscarLibro")  
+    path('buscarLibro/<str:codigo>', views.buscarLibro, name="buscarLibro")  
 ]
